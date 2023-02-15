@@ -1,30 +1,35 @@
-repeat wait() until game.Players.LocalPlayer.Character
+local isFlying = false
+local camera = workspace.CurrentCamera
+local char = game.Players.LocalPlayer.Character
+local hrp  = char:WaitForChild("HumanoidRootPart")
 
-local player = game.Players.LocalPlayer
-local character = player.Character
-local humanoid = character:WaitForChild("Humanoid")
-local torso = character:WaitForChild("Torso")
-local mouse = player:GetMouse()
+local bodyPos = Instance.new("BodyPosition")
+bodyPos.MaxForce = Vector3.new()
+bodyPos.D = 10
+bodyPos.P = 100
+bodyPos.Parent = hrp
 
-local enabled = false
+local bodyGyro = Instance.new("BodyGyro")
+bodyGyro.MaxTorque = Vector3.new()
+bodyGyro.D = 10
+bodyGyro.Parent = hrp
 
-mouse.KeyDown:Connect(function(key)
-    if key == "h" then
-        if enabled == false then
-            enabled = true
-            local bodyvelocity = Instance.new("BodyVelocity",torso)
+script.Parent.MouseButoon1Click:Connect(function()
+    isFlying = not isFlying
+end)
 
-            while enabled == true do
-                bodyvelocity.Velocity = mouse.Hit.lockVector * 500
-                wait()
-            end
+script.Parent.MouseButoon2Click:Connect(function()
+    isFlying = false
+end)
 
-        end
-
-        if enabled == true then
-            enabled = false
-            torso:FindFirstChildOfClass("BodyVelocity"):Destroy()
-        end
-
+game:GetService("RunService").RenderStepped:Connect(function()
+    if isFlying then
+        bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+        bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+        bodyPos.Position = hrp.Position + ((hrp.Position - camera.CFrame.Position).Unit * 10)
+        bodyGyro.CFrame = CFrame.new(camera.CFrame.Position, hrp.Position)
+    else
+        bodyPos.MaxForce = Vector3.new()
+        bodyGyro.MaxTorque = Vector3.new()
     end
 end)
