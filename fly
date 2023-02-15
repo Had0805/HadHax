@@ -7,7 +7,7 @@ local mouse = player:GetMouse()
 local enabled = false
 
 mouse.KeyDown:Connect(function(key)
-    if key == "f" then
+    if key == "h" then
         if enabled == false then
             enabled = true
             local bodyvelocity = Instance.new("BodyVelocity",torso)
