@@ -15,7 +15,7 @@ MainSection:NewButton("inf jump", "jump inf times", function()
 end)
 
 MainSection:NewButton("high walkspeed", "high walkspeed", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/1qkdn1ds'))()
+    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/walkspeed130'))()
 end)
 
 MainSection:NewButton("MT cast", "cast", function()
