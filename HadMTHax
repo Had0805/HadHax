@@ -1,0 +1,23 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Had MT Hub", "DarkTheme")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Home")
+
+
+MainSection:NewButton("Remote", "Remote", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/j4qyW7Ku'))()
+end)
+
+MainSection:NewButton("inf jump", "jump inf times", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/bC97eAyR'))()
+end)
+
+MainSection:NewButton("high walkspeed", "high walkspeed", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/1qkdn1ds'))()
+end)
+
+MainSection:NewButton("MT cast", "cast", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/R9UzMirC'))()
+end)
