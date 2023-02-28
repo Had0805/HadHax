@@ -22,5 +22,5 @@ MainSection:NewButton("Dex", "Dex", function()
 end)
 
 MainSection:NewButton("Noclip", "Noclip", function()
-    loadstring(game:HttpGet(''))()
+    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/noclip'))()
 end)
