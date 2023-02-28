@@ -47,20 +47,3 @@ end
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local u = game.Players.LocalPlayer
 local urchar = u.Character
-
-task.spawn(function()
-
-
-qUp = Mouse.KeyUp:Connect(function(KEY)
-if KEY == 'q' then
-    urchar.Humanoid.HipHeight = urchar.Humanoid.HipHeight - 3
-end
-end)
-eUp = Mouse.KeyUp:Connect(function(KEY)
-if KEY == 'e' then
-    urchar.Humanoid.HipHeight = urchar.Humanoid.HipHeight + 3
-end
-end)
-
-
-end)
