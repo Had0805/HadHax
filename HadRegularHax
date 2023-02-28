@@ -12,3 +12,7 @@ end)
 MainSection:NewButton("high walkspeed", "high walkspeed", function()
     loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/walkspeed130'))()
 end)
+
+MainSection:NewButton("spin", "spin", function()
+    loadstring(game:HttpGet('https://drive.google.com/file/d/1P2e4zIBQWqiGlq2iUJzB1hz-CMykR6KR/view?usp=share_link'))()
+end)
