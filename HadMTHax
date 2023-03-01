@@ -6,10 +6,6 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Home")
 
 
-MainSection:NewButton("Remote", "Remote", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/j4qyW7Ku'))()
-end)
-
 MainSection:NewButton("inf jump", "jump inf times", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/bC97eAyR'))()
 end)
@@ -20,8 +16,4 @@ end)
 
 MainSection:NewButton("MT cast", "cast", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/R9UzMirC'))()
-end)
-
-MainSection:NewButton("Auto spell", "cast", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Lmxsxa6R'))()
 end)
