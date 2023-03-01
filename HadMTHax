@@ -15,7 +15,7 @@ MainSection:NewButton("high walkspeed", "high walkspeed", function()
 end)
 
 MainSection:NewButton("MT cast", "cast", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/R9UzMirC'))()
+    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/MTcast'))()
 end)
 
 MainSection:NewButton("Noclip", "Noclip", function()
