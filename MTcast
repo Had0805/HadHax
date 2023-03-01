@@ -107,18 +107,6 @@ name2.TextScaled = true
 name2.TextSize = 14
 name2.TextWrapped = true
 
-Spell.Name = "Spell"
-Spell.Parent = LoginFrame
-Spell.BackgroundColor3 = Color3.new(0, 0, 0)
-Spell.Position = UDim2.new(0.339726031, 0, 0.777431905, 0)
-Spell.Size = UDim2.new(0, 99, 0, 30)
-Spell.Font = Enum.Font.SourceSans
-Spell.Text = "Spell List "
-Spell.TextColor3 = Color3.new(0, 0.333333, 0)
-Spell.TextScaled = true
-Spell.TextSize = 14
-Spell.TextWrapped = true
-
 Frame.Parent = ScreenGui
 Frame.Active = true
 Frame.BackgroundColor3 = Color3.new(0, 0, 0)
