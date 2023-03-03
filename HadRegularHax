@@ -1,26 +1,101 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Had Hax", "Serpent")
+-- Gui to Lua
+-- Version: 3.2
 
---Main
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Home")
+-- Instances:
 
-MainSection:NewButton("inf jump", "jump inf times", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/bC97eAyR'))()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.76986587, 0, 0.785470128, 0)
+Frame.Size = UDim2.new(0, 446, 0, 251)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextLabel.Size = UDim2.new(0, 446, 0, 36)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Had Hax"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextButton.Position = UDim2.new(0.0291479826, 0, 0.219123513, 0)
+TextButton.Size = UDim2.new(0, 180, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "130 Walkspeed"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 25.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/Had0805/HadHax/raw/main/walkspeed130"),true)()
 end)
 
-MainSection:NewButton("high walkspeed", "high walkspeed", function()
-    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/walkspeed130'))()
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextButton_2.Position = UDim2.new(0.0291479826, 0, 0.394422323, 0)
+TextButton_2.Size = UDim2.new(0, 180, 0, 31)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Inf jump"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 25.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/bC97eAy"),true)()
 end)
 
-MainSection:NewButton("spin", "spin", function()
-    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/spin'))()
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextButton_3.Position = UDim2.new(0.0291479826, 0, 0.569721103, 0)
+TextButton_3.Size = UDim2.new(0, 180, 0, 31)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Spin"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 25.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/Had0805/HadHax/raw/main/spin"),true)()
 end)
 
-MainSection:NewButton("Dex", "Dex", function()
-    loadstring(game:HttpGet('https://gist.github.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4'))()
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextButton_4.Position = UDim2.new(0.520179391, 0, 0.219123483, 0)
+TextButton_4.Size = UDim2.new(0, 180, 0, 31)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Noclip"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 25.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/Had0805/HadHax/raw/main/noclip"),true)()
 end)
 
-MainSection:NewButton("Noclip", "Noclip", function()
-    loadstring(game:HttpGet('https://github.com/Had0805/HadHax/raw/main/noclip'))()
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(42, 135, 14)
+TextButton_5.Position = UDim2.new(0.520179391, 0, 0.394422293, 0)
+TextButton_5.Size = UDim2.new(0, 180, 0, 31)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Dex"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 25.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gist.github.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"),true)()
 end)
